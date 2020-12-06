@@ -6,16 +6,38 @@
         body{
         background-color: rgb(17, 179, 201);
     }
+    table{
+        text-align: center;
+        margin: auto;
+    }
+    h2,span{
+        display:inline;
+    }
+    tr{
+        text-align: center;
+        margin: auto;
+    }
+    div.cards{
+        margin: auto;
+        text-align: center;
+        z-index: 0;
+    }
+    #bottom{
+        float: right;
+        width: 600;
+    }
+    #photo{
+        margin: auto;
+    }
     </style>
     
 </head>
 <body>
-    <div class="background">
-    <img src="C:\Users\Raunak Baidh\Desktop\Practice\profile-card-component-main\profile-card-component-main\images\bg-pattern-top.svg" width="200" >
-    <div class="card">
+    <img src="C:\Users\Raunak Baidh\Desktop\Practice\profile-card-component-main\profile-card-component-main\images\bg-pattern-top.svg" width="600" z-index= -1 >
+    <div class="cards">
         <img src="C:\Users\Raunak Baidh\Desktop\Practice\profile-card-component-main\profile-card-component-main\images\bg-pattern-card.svg" width="300" height="150">
-        <img src="C:\Users\Raunak Baidh\Desktop\Practice\profile-card-component-main\profile-card-component-main\images\image-victor.jpg" >
-        <h2 >Victor Crest</h2><p>26</p>
+        <img id="photo" src="C:\Users\Raunak Baidh\Desktop\Practice\profile-card-component-main\profile-card-component-main\images\image-victor.jpg" ><br>
+        <h2>Victor Crest </h2><span> 26</span>
         <p>London</p>
         <table>
             <tr>
@@ -30,7 +52,6 @@
             </tr>
         </table>
     </div>
-    <img src="C:\Users\Raunak Baidh\Desktop\Practice\profile-card-component-main\profile-card-component-main\images\bg-pattern-bottom.svg"  width="200" align:"bottom-right">
-    </div>
+    <img id="bottom" src="C:\Users\Raunak Baidh\Desktop\Practice\profile-card-component-main\profile-card-component-main\images\bg-pattern-bottom.svg">
 </body>
 </html>
