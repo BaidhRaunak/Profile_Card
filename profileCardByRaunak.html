@@ -2,9 +2,16 @@
 <html>
 <head>
     <title>Profile Card</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body{
         background-color: rgb(17, 179, 201);
+    }
+    #top{
+        background-position: top-left;
+        z-index: -1;
+        position: relative;
+        width: 200px;
     }
     table{
         text-align: center;
@@ -17,26 +24,37 @@
         text-align: center;
         margin: auto;
     }
-    div.cards{
-        margin: auto;
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         text-align: center;
-        z-index: 0;
     }
     #bottom{
         float: right;
-        width: 600;
+        width: 200px;
+        background-position: bottom-right;
+        z-index: -1;
+        position: relative;
     }
     #photo{
         margin: auto;
+        border-radius: 50%;
+        padding: 5px;
+        background-color: white;
+    }
+    #centr{
+        margin-left: auto;
+        margin-right: auto;
     }
     </style>
     
 </head>
 <body>
-    <img src="C:\Users\Raunak Baidh\Desktop\Practice\profile-card-component-main\profile-card-component-main\images\bg-pattern-top.svg" width="600" z-index= -1 >
-    <div class="cards">
-        <img src="C:\Users\Raunak Baidh\Desktop\Practice\profile-card-component-main\profile-card-component-main\images\bg-pattern-card.svg" width="300" height="150">
-        <img id="photo" src="C:\Users\Raunak Baidh\Desktop\Practice\profile-card-component-main\profile-card-component-main\images\image-victor.jpg" ><br>
+    <img id="top" src="C:\Users\Raunak Baidh\Desktop\Practice\profile-card-component-main\profile-card-component-main\images\bg-pattern-top.svg">
+    <div class="flex-container">
+        <img id="centr" src="C:\Users\Raunak Baidh\Desktop\Practice\profile-card-component-main\profile-card-component-main\images\bg-pattern-card.svg" width="300" height="150">
+        <img id="photo" src="C:\Users\Raunak Baidh\Desktop\Practice\profile-card-component-main\profile-card-component-main\images\image-victor.jpg" >
         <h2>Victor Crest </h2><span> 26</span>
         <p>London</p>
         <table>
