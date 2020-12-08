@@ -9,18 +9,9 @@
     }
     #top{
         background-position: top-left;
-        z-index: -1;
-        position: relative;
         width: 200px;
     }
     table{
-        text-align: center;
-        margin: auto;
-    }
-    h2,span{
-        display:inline;
-    }
-    tr{
         text-align: center;
         margin: auto;
     }
@@ -28,14 +19,19 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
         text-align: center;
+        height: 420px;
+        border-radius: 20px;
+        background-color: white
+        
     }
     #bottom{
         float: right;
         width: 200px;
         background-position: bottom-right;
-        z-index: -1;
-        position: relative;
     }
     #photo{
         margin: auto;
@@ -46,6 +42,7 @@
     #centr{
         margin-left: auto;
         margin-right: auto;
+        border-radius: 20px 20px 0px 0px;
     }
     </style>
     
@@ -55,7 +52,7 @@
     <div class="flex-container">
         <img id="centr" src="C:\Users\Raunak Baidh\Desktop\Practice\profile-card-component-main\profile-card-component-main\images\bg-pattern-card.svg" width="300" height="150">
         <img id="photo" src="C:\Users\Raunak Baidh\Desktop\Practice\profile-card-component-main\profile-card-component-main\images\image-victor.jpg" >
-        <h2>Victor Crest </h2><span> 26</span>
+        <h2>Victor Crest</h2><span> 26</span>
         <p>London</p>
         <table>
             <tr>
