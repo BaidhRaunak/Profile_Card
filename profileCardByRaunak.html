@@ -5,16 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body{
-        background-color: rgb(17, 179, 201);
-    }
-    #top{
-        background-position: top-left;
-        width: 200px;
-    }
-    table{
+            background: url('file:///C:/Users/Raunak%20Baidh/Desktop/Practice/profile-card-component-main/profile-card-component-main/images/bg-pattern-top.svg'), url('file:///C:/Users/Raunak%20Baidh/Desktop/Practice/profile-card-component-main/profile-card-component-main/images/bg-pattern-bottom.svg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: -80% 160%, 180% -110%;
+            background-color: hsl(185, 75%, 39%);
+            font-size: 18px;
+            font-family: 'Kumbh sans';
+        }
+  /*  table{
+        table-layout: auto;
+        width: 100%;
+        border-collapse: collapse;
+        border-top: 1px solid #13010115;
         text-align: center;
         margin: auto;
-    }
+    }*/
+   /* th{
+        padding-top: 10px;
+        text-align: center;
+        font-weight: 700;
+    }*/
     .flex-container{
         display: flex;
         flex-direction: column;
@@ -25,34 +36,29 @@
         text-align: center;
         height: 420px;
         border-radius: 20px;
-        background-color: white
-        
+        background-color: white        
     }
-    #bottom{
-        float: right;
-        width: 200px;
-        background-position: bottom-right;
-    }
-    #photo{
+   /* #photo{
         margin: auto;
         border-radius: 50%;
         padding: 5px;
         background-color: white;
-    }
-    #centr{
-        margin-left: auto;
-        margin-right: auto;
+        position: absolute;
+        top: 309px;
+        left: 622px;
+    }*/
+  /*  #centr{
         border-radius: 20px 20px 0px 0px;
-    }
+        transform: tra
+    }   */
     </style>
     
 </head>
 <body>
-    <img id="top" src="C:\Users\Raunak Baidh\Desktop\Practice\profile-card-component-main\profile-card-component-main\images\bg-pattern-top.svg">
     <div class="flex-container">
-        <img id="centr" src="C:\Users\Raunak Baidh\Desktop\Practice\profile-card-component-main\profile-card-component-main\images\bg-pattern-card.svg" width="300" height="150">
-        <img id="photo" src="C:\Users\Raunak Baidh\Desktop\Practice\profile-card-component-main\profile-card-component-main\images\image-victor.jpg" >
-        <h2>Victor Crest</h2><span> 26</span>
+        <img id="centr" src="C:\Users\Raunak Baidh\Desktop\Practice\profile-card-component-main\profile-card-component-main\images\bg-pattern-card.svg" width="350" height="150">
+        <img id="photo" src="C:\Users\Raunak Baidh\Desktop\Practice\profile-card-component-main\profile-card-component-main\images\image-victor.jpg" ><br><br>
+        <p style="font-weight:700">Victor Crest</p><span> 26</span>
         <p>London</p>
         <table>
             <tr>
@@ -61,12 +67,11 @@
                 <th>1.4K</th>
             </tr>
             <tr>
-                <th>Followers</th>
-                <th>Likes</th>
-                <th>Photos</th>
+                <td>Followers</td>
+                <td>Likes</td>
+                <td>Photos</td>
             </tr>
         </table>
     </div>
-    <img id="bottom" src="C:\Users\Raunak Baidh\Desktop\Practice\profile-card-component-main\profile-card-component-main\images\bg-pattern-bottom.svg">
 </body>
 </html>
