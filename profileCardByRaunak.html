@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Profile Card</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+
+    <link href='https://fonts.googleapis.com/css?family=Kumbh Sans' rel='stylesheet'>
     <style>
         body{
             background: url('file:///C:/Users/Raunak%20Baidh/Desktop/Practice/profile-card-component-main/profile-card-component-main/images/bg-pattern-top.svg'), url('file:///C:/Users/Raunak%20Baidh/Desktop/Practice/profile-card-component-main/profile-card-component-main/images/bg-pattern-bottom.svg');
@@ -11,15 +13,17 @@
             background-position: -80% 160%, 180% -110%;
             background-color: hsl(185, 75%, 39%);
             font-size: 18px;
-            font-family: 'Kumbh sans';
         }
     table{
         table-layout: auto;
         width: 100%;
+        font-size: 12px;
         border-collapse: collapse;
         border-top: 1px solid #13010115;
         text-align: center;
         margin: auto;
+        position: relative;
+        bottom: 20px;
     }
     th{
         padding-top: 10px;
@@ -31,6 +35,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        font-family: 'Kumbh Sans';
         margin-top: 180px;
         margin-left: auto;
         margin-right: auto; 
@@ -48,8 +53,22 @@
     }
     #centr{
         border-radius: 20px 20px 0px 0px;
-        djfn riiu;
     }
+    div p, span{
+        display: inline-block;
+    }
+    .intro{
+        display:inline-block;
+        position: relative;
+        top: -50px;
+    }
+    div > span{
+        opacity: 0.7;
+        font-weight: 400;
+        font-size: 13px;
+    }
+    .attribution { font-size: 11px; text-align: center; position: relative; bottom: -50px; }
+    .attribution a { color: hsl(228, 45%, 44%); }
     </style>
     
 </head>
@@ -57,19 +76,27 @@
     <div class="flex-container">
         <img id="centr" src="C:\Users\Raunak Baidh\Desktop\Practice\profile-card-component-main\profile-card-component-main\images\bg-pattern-card.svg" width="350" height="120">
         <img id="photo" src="C:\Users\Raunak Baidh\Desktop\Practice\profile-card-component-main\profile-card-component-main\images\image-victor.jpg">
-        <p>Victor Crest</p>
+            <div class="intro">
+                <p style="font-weight: 700;">Victor Crest </p><span style="padding-left: 10px;"> 26</span>
+            </div>
+        <span style="padding-bottom: 0px; position: relative; bottom: 55px;" >London</span>
+        
         <table>
             <tr>
                 <th>80K</th>
                 <th>803K</th>
                 <th>1.4K</th>
             </tr>
-            <tr>
+            <tr style="opacity: 0.7; line-height: 2;">
                 <td>Followers</td>
                 <td>Likes</td>
                 <td>Photos</td>
             </tr>
         </table>
     </div>
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Raunak Jain</a>.
+      </div>
 </body>
 </html>
