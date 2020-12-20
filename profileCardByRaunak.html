@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <title>Profile Card</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href='https://fonts.googleapis.com/css?family=Kumbh Sans' rel='stylesheet'>
     <style>
@@ -67,8 +68,24 @@
         font-weight: 400;
         font-size: 13px;
     }
-    .attribution { font-size: 11px; text-align: center; position: relative; bottom: -50px; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+        position: relative;
+        bottom: -50px;
+    }
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+    }
+    @media only screen and (max-width: 375px) {
+        body{
+            background-position: 128.2% 230%, -33.4% -120%;
+        }
+        .flex-container{
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
     </style>
     
 </head>
